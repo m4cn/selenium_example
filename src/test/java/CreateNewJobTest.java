@@ -26,7 +26,7 @@ public class CreateNewJobTest {
     }
 
     @Test
-    public void firstTest() {
+    public void CreateNewJobTest() {
         //given
         final String CUSTOMER_NAME = "Bob";
         final String FROM = "Wed, Jul 6 2022";
