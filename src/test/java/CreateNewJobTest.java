@@ -3,6 +3,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.net.URL;
+
 public class CreateNewJobTest {
 
     private final static String EMAIL = "mwachala@gmail.com";
@@ -18,6 +20,8 @@ public class CreateNewJobTest {
 
     @Before
     public void setUp(){
+        URL driverPath = getClass().getClassLoader().getResource("chromedriver");
+        System.setProperty("webdriver.chrome.driver",driverPath.getPath());
         //This is usually done in some parent test class
         driver=new ChromeDriver();
         driver.manage().window().maximize();
